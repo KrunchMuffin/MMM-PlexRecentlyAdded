@@ -1,0 +1,58 @@
+.MMM-PlexRecentlyAdded .loading,
+.MMM-PlexRecentlyAdded .no-activity {
+  font-style: italic;
+}
+
+.MMM-PlexRecentlyAdded .error {
+  color: #c00;
+}
+
+/* activity row */
+
+.MMM-PlexRecentlyAdded .activity .title::before {
+  content: '- ';
+}
+
+/* details row */
+
+.MMM-PlexRecentlyAdded .details {
+  margin-left: 24.4px;
+}
+
+.MMM-PlexRecentlyAdded .details .quality::before {
+  content: '- ';
+}
+
+.MMM-PlexRecentlyAdded .details .quality,
+.MMM-PlexRecentlyAdded .details .transcode {
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.poster-column-wrapper {
+  flex: 0 0 85px;
+}
+
+.poster-column {
+  height: 100%;
+  width: 85px;
+}
+
+.info-column {
+  height: 100%;
+  width: 100%;
+  padding-right: 20px;
+}
